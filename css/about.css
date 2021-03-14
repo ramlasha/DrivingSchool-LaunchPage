@@ -1,0 +1,128 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+h1 span {
+  display: block;
+  font-size: 2em;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2em;
+}
+
+header img {
+  width: 3.5em;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li a {
+  padding: 0.6em;
+  font-size: 1.2em;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+.top {
+  animation: fadeIn 2s;
+}
+
+.hero-bg {
+  background: url("../images/car-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 10em;
+  padding-top: 1em;
+}
+
+.top {
+  color: #e8505b;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  padding: 1.2em;
+  text-align: justify;
+}
+
+.footer {
+  margin-top: 2em;
+  padding-bottom: 1.5em;
+  color: white;
+  background-color: black;
+}
+
+.footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+.social-media img {
+  width: 2em;
+  padding: 1.2em 1.2em 0.5em 1.2em;
+  filter: invert(1);
+}
+
+@media (min-width: 570px) {
+  section {
+    margin: 0 20%;
+  }
+  .form-container {
+    text-align: center;
+    margin: 2em -2em 0;
+    border-radius: 0.5em;
+  }
+  header {
+    padding: 0 5em;
+  }
+  p {
+    padding: 1.2em 2em;
+  }
+}
+
+@media (min-width: 930px) {
+  h1 span {
+    font-size: 3em;
+  }
+  section {
+    margin: 0 15%;
+  }
+  header {
+    padding: 0 7em;
+  }
+  .footer {
+    margin-top: 3em;
+    padding-bottom: 3em;
+  }
+  p {
+    padding: 1.22em 3.5em;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-2em);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
